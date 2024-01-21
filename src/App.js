@@ -10,7 +10,7 @@ function App() {
 
     try {
       const queryParam = encodeURIComponent('ทดสอบv1');
-      const apiUrl = `https://103.86.50.71:30900/api/users/person-info?query=${queryParam}&page=0&size=50`;
+      const apiUrl = `http://103.86.50.71:30900/api/users/person-info?query=${queryParam}&page=0&size=50`;
 
       const response = await axios.get(apiUrl, {
         headers: {
